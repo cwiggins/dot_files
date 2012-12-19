@@ -1,3 +1,9 @@
 [submodule "vim/bundle/clam"]
 	path = vim/bundle/clam
 	url = git://github.com/sjl/clam.vim.git
+[submodule "vim/bundle/c.vim"]
+	path = vim/bundle/c.vim
+	url = git://github.com/vim-scripts/c.vim.git
+[submodule "vim/bundle/color-sampler-pack"]
+	path = vim/bundle/color-sampler-pack
+	url = git://github.com/Slashbunny/vim-colorsamplerpack.git
