@@ -106,3 +106,6 @@
 [submodule "vim/bundle/vimproc"]
 	path = vim/bundle/vimproc
 	url = git://github.com/Shougo/vimproc.git
+[submodule "tmux/tmux-powerline"]
+	path = tmux/tmux-powerline
+	url = git://github.com/erikw/tmux-powerline.git
