@@ -109,3 +109,6 @@
 [submodule "tmux/tmux-powerline"]
 	path = tmux/tmux-powerline
 	url = git://github.com/erikw/tmux-powerline.git
+[submodule "dir_colors"]
+	path = dir_colors
+	url = git://github.com/seebi/dircolors-solarized.git

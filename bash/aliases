@@ -1,0 +1,17 @@
+# Apache Reload
+alias ra='sudo /etc/init.d/apache2 reload'
+
+# Show all files in ls with color
+alias ls='ls --color=auto'
+
+# List all files
+alias la='ls -a'
+
+# Restart computer
+alias shutup='sudo shutdown -r now'
+
+# Shutdown computer
+alias sitdown='sudo shutdown -h now'
+
+# Easy Source
+alias so='source'
