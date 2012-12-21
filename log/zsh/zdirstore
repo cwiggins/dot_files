@@ -1,0 +1,7 @@
+if [ -d ~/dot_files/oh-my-zsh/custom/zsh-completions ]; then pushd -q ~/dot_files/oh-my-zsh/custom/zsh-completions; fi
+if [ -d ~/dot_files/oh-my-zsh/custom ]; then pushd -q ~/dot_files/oh-my-zsh/custom; fi
+if [ -d ~/dot_files/oh-my-zsh/custom/plugins ]; then pushd -q ~/dot_files/oh-my-zsh/custom/plugins; fi
+if [ -d ~/dot_files/oh-my-zsh ]; then pushd -q ~/dot_files/oh-my-zsh; fi
+if [ -d ~/dot_win ]; then pushd -q ~/dot_win; fi
+if [ -d ~ ]; then pushd -q ~; fi
+if [ -d ~/dot_files ]; then pushd -q ~/dot_files; fi
