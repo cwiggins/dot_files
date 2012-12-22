@@ -127,3 +127,9 @@
 [submodule "fonts/terminus-bold-powerline"]
 	path = fonts/terminus-bold-powerline
 	url = git://github.com/lharding/terminus-bold-powerline.git
+[submodule "fonts/terminus-gvim-powerline"]
+	path = fonts/terminus-gvim-powerline
+	url = https://gist.github.com/2416601.git
+[submodule "fonts/menlo-powerline"]
+	path = fonts/menlo-powerline
+	url = https://gist.github.com/1595572.git
