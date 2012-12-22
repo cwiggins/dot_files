@@ -1,3 +1,82 @@
 : 1356106206:0;../..
 : 1356106214:0;git status
 : 1356106224:0;git add *
+: 1356106226:0;git status
+: 1356106258:0;git commit -m "h"
+: 1356106268:0;git push
+: 1356107205:0;sudo pacman -S gksudo
+: 1356107224:0;yaourt gksudo
+: 1356107296:0;sudo pacman -Ss sudo
+: 1356107802:0;sudo -l
+: 1356108198:0;ls /etc
+: 1356108259:0;vim sudo:/etc/polkit-1/local-authority.conf.d/50-localauthority.conf
+: 1356108299:0;vim sudo:/etc/polkit-1/localauthority.conf.d/50-localauthority.conf
+: 1356108356:0;ls /etc/polkit-1/rules.d
+: 1356108362:0;sudo ls /etc/polkit-1/rules.d
+: 1356108394:0;man pklocalauthority
+: 1356116475:0;sudo pacman -Syyu
+: 1356119108:0;yaourt pamixer-git
+: 1356119165:0;pamixer -h
+: 1356119191:0;pamixer --list-sinks
+: 1356119200:0;pamixer --list-sources
+: 1356119257:0;pamixer --increase 5%+
+: 1356119267:0;pamixer --increase 5%
+: 1356119271:0;pamixer --increase 5
+: 1356119277:0;pamixer --increase %5
+: 1356119301:0;man pamixer
+: 1356119320:0;pamixer --get-volume
+: 1356119415:0;pamixer --decrease 5
+: 1356119417:0;pamixer --get-volume
+: 1356119619:0;cd
+: 1356119627:0;build/dwm
+: 1356119628:0;ls
+: 1356119641:0;make clean
+: 1356119642:0;ls
+: 1356119659:0;vim config.h
+: 1356119744:0;pamixer --help
+: 1356120128:0;make
+: 1356120184:0;sudo make clean install
+: 1356124026:0;ls
+: 1356124032:0;lla
+: 1356124043:0;cd scripts
+: 1356124044:0;ls
+: 1356124057:0;vim autostart
+: 1356124365:0;ls /etc
+: 1356124445:0;ls /etc/profile.d
+: 1356124674:0;vim sudo:/etc/profile.d/autostart.sh
+: 1356124711:0;sudo touch /etc/profile.d/autostart.sh
+: 1356124715:0;vim sudo:/etc/profile.d/autostart.sh
+: 1356124809:0;echo $PATH
+: 1356124828:0;export PATH=$PATH:/home/curtiss/scripts
+: 1356124831:0;echo $PATH
+: 1356125198:0;vim vimprobtab.sh
+: 1356126704:0;cd
+: 1356126708:0;exit
+: 1356126713:0;cd
+: 1356126722:0;cd build/dwm
+: 1356126723:0;ls
+: 1356126730:0;vim config.h
+: 1356126819:0;make
+: 1356126838:0;vim config.h
+: 1356126888:0;make
+: 1356126899:0;sudo make clean install
+: 1356126907:0;exit
+: 1356126971:0;vim .mutt/muttrc
+: 1356126986:0;cd dot_files
+: 1356126993:0;vim urlview
+: 1356127002:0;mutt
+: 1356138511:0;sudo systemctl reboot
+: 1356120689:0;cd dot_files
+: 1356120697:0;vim xinitrc
+: 1356138975:0;cp -R ~/scripts scripts
+: 1356138977:0;ls
+: 1356138980:0;ls scripts
+: 1356139007:0;chmod u+x autostart
+: 1356139032:0;cd scripts
+: 1356139035:0;chmod u+x autostart
+: 1356139057:0;chmod u+x vimprobtab.sh
+: 1356139282:0;rm -rf ~/scripts
+: 1356139313:0;ln -s ~/dot_files/scripts ~/scripts
+: 1356139324:0;lla ~
+: 1356139417:0;..
+: 1356139422:0;git add *

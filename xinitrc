@@ -46,5 +46,9 @@ xcompmgr &
 
 # wallpaper
 nitrogen --restore &
+
+# autostart
+/home/curtiss/scripts/autostart &
+
 exec dwm
 
