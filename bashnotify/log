@@ -1,0 +1,8 @@
+[ 05 Nov 2012 16:51 ] :: NOTE: writing example config to /home/curtiss/.bashnotify/config...
+[ 05 Nov 2012 16:51 ] :: you should edit this file before starting the deamon
+[ 05 Nov 2012 17:01 ] :: error: file found at /home/curtiss/.bashnotify/pid, daemon already running?
+[ 05 Nov 2012 18:04 ] :: error: file found at /home/curtiss/.bashnotify/pid, daemon already running?
+[ 06 Nov 2012 16:39 ] :: error: file found at /home/curtiss/.bashnotify/pid, daemon already running?
+[ 06 Nov 2012 17:03 ] :: error: file found at /home/curtiss/.bashnotify/pid, daemon already running?
+[ 06 Nov 2012 17:04 ] :: error: error stopping daemon
+[ 06 Nov 2012 17:04 ] :: error: file found at /home/curtiss/.bashnotify/pid, daemon already running?

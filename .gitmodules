@@ -118,3 +118,12 @@
 [submodule "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "fonts/ubuntu-mono-powerline"]
+	path = fonts/ubuntu-mono-powerline
+	url = git://github.com/scotu/ubuntu-mono-powerline.git
+[submodule "fonts/ubuntu-mono-powerline-ttf"]
+	path = fonts/ubuntu-mono-powerline-ttf
+	url = git://github.com/pdf/ubuntu-mono-powerline-ttf.git
+[submodule "fonts/terminus-bold-powerline"]
+	path = fonts/terminus-bold-powerline
+	url = git://github.com/lharding/terminus-bold-powerline.git

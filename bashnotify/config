@@ -1,0 +1,48 @@
+#!/bin/bash
+#
+# bashnotify config - any valid bash is allowed, you
+# only need to define handle_event() for the deamon
+# to run properly
+#
+# this example config uses dzen
+#
+# $mydir exists, and its value is /home/curtiss/.bashnotify
+#
+###
+
+# monitor width in pixels
+monitor_x=1366
+
+# monitor height in pixels
+monitor_y=768
+
+# how long to appear onscreen
+delay=3
+
+# dzen appearance
+font='Verdana-8'     # aur/dzen2-svn required (xft font)
+foreground='#ffffff'
+background='#000000'
+
+# dzen size in pixels
+height=20
+width=400
+
+# distance of upper-left corner from left edge
+x_offset=$((monitor_x-width-50))
+
+# distance of upper-left corner from top edge
+y_offset=$((monitor_y-height-50))
+
+###
+#
+# the actual handle_event() definition
+#
+# this is the only requirement for a valid config
+#
+###
+
+handle_event() {
+  notify-send "$(mpc current)"
+}
+

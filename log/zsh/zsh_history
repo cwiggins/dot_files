@@ -80,3 +80,37 @@
 : 1356139324:0;lla ~
 : 1356139417:0;..
 : 1356139422:0;git add *
+: 1356139426:0;git status
+: 1356139477:0;git push
+: 1356139518:0;git commit -m "added my scripts folder"
+: 1356139524:0;git push
+: 1356144819:0;cd
+: 1356144831:0;vim first
+: 1356144897:0;chmod u+x first
+: 1356144901:0;./first
+: 1356144963:0;vim ginfo
+: 1356145182:0;./ginfo
+: 1356145195:0;chmod u+x ginfo
+: 1356145198:0;./ginfo
+: 1356145226:0;vim ginfo
+: 1356145248:0;./ginfo
+: 1356145413:0;echo $COLUMNS
+: 1356145435:0;echo $LINES
+: 1356145449:0;echo $BASH
+: 1356145466:0;echo $PS1
+: 1356145492:0;echo $USERNAME
+: 1356186807:0;lla
+: 1356186862:0;lla | less
+: 1356187051:0;cd dot_files
+: 1356187086:0;cp -R ~/.bashnotify bashnotify
+: 1356187089:0;ls
+: 1356187096:0;ls bashnotify
+: 1356187147:0;lla | less
+: 1356187166:0;lla ~ | less
+: 1356187302:0;mkdir fonts
+: 1356187308:0;git add *
+: 1356187463:0;git submodule add git://github.com/scotu/ubuntu-mono-powerline.git fonts/ubuntu-mono-powerline
+: 1356187470:0;ls fonts
+: 1356187510:0;git submodule add git://github.com/pdf/ubuntu-mono-powerline-ttf.git fonts/ubuntu-mono-powerline-ttf
+: 1356187568:0;git submodule add git://github.com/lharding/terminus-bold-powerline.git fonts/terminus-bold-powerline
+: 1356187573:0;git add *
