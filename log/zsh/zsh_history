@@ -122,3 +122,45 @@
 : 1356187785:0;ls fonts/menlo-powerline
 : 1356187819:0;git *
 : 1356187831:0;git add *
+: 1356187859:0;git commit -m "more fonts"
+: 1356187863:0;git push
+: 1356188153:0;cp -R ~/.mplayer mplayer
+: 1356188155:0;ls
+: 1356188159:0;git add *
+: 1356188164:0;ls
+: 1356188172:0;ls mplayer
+: 1356188247:0;lla ~ | less
+: 1356188931:0;ping -c3 www.google.com
+: 1356188945:0;sudo systemctl reboot
+: 1356191047:0;sudo wifi-menu
+: 1356191132:0;sudo rm /run/wpa_supplicant/wlan0
+: 1356191136:0;sudo wifi-menu
+: 1356192464:0;lla
+: 1356192491:0;lla | less
+: 1356195057:0;ping -c3 www.google.com
+: 1356196688:0;sudo pacman -Syyu
+: 1356196768:0;sudo pacman -Ss linux-ck
+: 1356196792:0;sudo pacman -Ss linux-ck | less
+: 1356196956:0;sudo pacman -Ss dwm
+: 1356207747:0;pacman -h
+: 1356207764:0;pacman -R -h
+: 1356207789:0;pacman -Rs linux
+: 1356207795:0;sudo pacman -Rs linux
+: 1356207824:0;sudo pacman -R linux
+: 1356244215:0;sudo systemctl poweroff
+: 1356273369:0;dmesg
+: 1356275926:0;lla | less
+: 1356275963:0;ls .config
+: 1356276081:0;cp .config/vimprobable/bookmarks ~/dot_files/vimprobable/bookmarks
+: 1356276124:0;mkdir ~/dot_files/vimprobable
+: 1356276126:0;cp .config/vimprobable/bookmarks ~/dot_files/vimprobable/bookmarks
+: 1356276160:0;cp .config/vimprobable/vimprobablerc ~/dot_files/vimprobable/vimprobablerc
+: 1356276226:0;mkdir ~/dot_files/mutt
+: 1356276303:0;cp ~/.mutt/muttrc ~/dot_files/mutt/muttrc
+: 1356276336:0;cp ~/.mutt/mailcap ~/dot_files/mutt/mailcap
+: 1356276351:0;cd dot_files/mutt
+: 1356276355:0;ls
+: 1356276362:0;cat muttrc
+: 1356276377:0;cat mailcap
+: 1356276414:0;..
+: 1356276417:0;git add *

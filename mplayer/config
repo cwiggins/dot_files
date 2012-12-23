@@ -1,0 +1,22 @@
+# Write your default config options here!
+[default]
+ao=pulse
+vo=vaapi
+va=vaapi
+
+
+[protocol.dvd]
+dvd-device=/dev/sr0
+vf=pp=hb/vb/dr/al/fd
+alang=en
+nosub=yes
+
+[protocol.dvdnav]
+profile-desc="profile for enabling dvd menus"
+profile=protocol.dvd
+mouse-movements=yes
+nocache=yes
+
+[extension.mkv]
+ass=true
+embeddedfonts=true
