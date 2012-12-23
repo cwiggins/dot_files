@@ -164,3 +164,17 @@
 : 1356276377:0;cat mailcap
 : 1356276414:0;..
 : 1356276417:0;git add *
+: 1356276423:0;git status
+: 1356276483:0;git commit -m "added mutt config"
+: 1356276527:0;git push
+: 1356276636:0;cd vimprobable
+: 1356276638:0;ls
+: 1356276665:0;vim .gitignore
+: 1356277212:0;cp ~/.config/vimprobable/cookies ~/dot_files/vimprobable/cookies
+: 1356277229:0;cp ~/.config/vimprobable/history ~/dot_files/vimprobable/history
+: 1356277247:0;cp ~/.config/vimprobable/closed ~/dot_files/vimprobable/closed
+: 1356277296:0;cp ~/.config/vimprobable/quickmarks ~/dot_files/vimprobable/quickmarks
+: 1356277297:0;ls
+: 1356277309:0;vim .gitignore
+: 1356277418:0;..
+: 1356277423:0;git add *
