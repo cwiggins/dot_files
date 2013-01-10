@@ -3,6 +3,7 @@
 ao=pulse
 vo=vaapi
 va=vaapi
+use-filename-title=1
 
 
 [protocol.dvd]

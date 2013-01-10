@@ -178,3 +178,138 @@
 : 1356277309:0;vim .gitignore
 : 1356277418:0;..
 : 1356277423:0;git add *
+: 1356277429:0;git status
+: 1356277459:0;git commit -m "started adding .gitignore and .gitkeep files"
+: 1356277482:0;git push
+: 1356287021:0;sudo systemctl reboot
+: 1356496176:0;sudo systemctl poweroff
+: 1356705690:0;crontab -e
+: 1356706045:0;mkdir .wallpaper
+: 1356706562:0;feh -h
+: 1356706747:0;man feh
+: 1356707343:0;pstree
+: 1356707388:0;find
+: 1356707404:0;find ~/.wallpaper
+: 1356707430:0;vim .xinitrc
+: 1356707482:0;sudo systemctl reboot
+: 1356707926:0;sudo systemctl enable cronie.service
+: 1356707940:0;which cron
+: 1356707943:0;which crontab
+: 1356707949:0;which cronie
+: 1356708003:0;crontab -l
+: 1356708029:0;crontab -e
+: 1356708063:0;sudo systemctl start cronie.service
+: 1356708168:0;crontab -e
+: 1356708398:0;man feh
+: 1356709118:0;ls
+: 1356709210:0;cd dot_files
+: 1356709221:0;ls
+: 1356709230:0;cd scripts
+: 1356709232:0;ls
+: 1356709248:0;vim image_viewer.sh
+: 1356709268:0;shopt
+: 1356709279:0;sudo pacman -S shopy
+: 1356709293:0;sudo pacman -S shopt
+: 1356709310:0;yaourt shopt
+: 1356709487:0;chmod u+x image_viewer.sh
+: 1356709790:0;lla
+: 1356709793:0;cd
+: 1356709794:0;lla
+: 1356709801:0;cd .vifm
+: 1356709801:0;ls
+: 1356709809:0;vim vifmrc
+: 1356709893:0;vifm
+: 1356710206:0;vim vifmrc
+: 1356710341:0;vifm
+: 1356710393:0;vim vifmrc
+: 1356710445:0;vifm
+: 1356731217:0;exit
+: 1356731897:0;crontab -e
+: 1356740606:0;mutt
+: 1356744582:0;sudo systemctl poweroff
+: 1356837350:0;ls Videos
+: 1356842636:0;ncmpcpp
+: 1356842658:0;ncmpcpp -h 192.168.1.151
+: 1356842693:0;ncmpcpp
+: 1356893485:0;mutt
+: 1356893979:0;exit
+: 1356894229:0;ping -c3 www.google.com
+: 1356894242:0;sudo systemctl reboot
+: 1356969531:0;pamixer --list-sinks
+: 1356969546:0;pamixer -h
+: 1356969567:0;pamixer -s 1
+: 1356969581:0;pamixer --list-sources
+: 1356969607:0;alsamixer
+: 1356969799:0;aplay -l
+: 1356969967:0;aplay -D plughw:0,3 /usr/share/sounds/alsa/Front_Center.wav
+: 1356970211:0;pacmd help
+: 1356970243:0;pacmd list-sinks
+: 1356970305:0;pacmd list-sinks | less
+: 1356970339:0;pacmd help
+: 1356970356:0;pacmd set-default-sink 1
+: 1356970374:0;pacmd list-sinks | less
+: 1356970449:0;pacmd set-sink-mute 1, 0
+: 1356970457:0;pacmd set-sink-mute 1 0
+: 1356971023:0;sudo systemctl reboot
+: 1356971468:0;lspci -v
+: 1356971490:0;lspci -v | less
+: 1356971726:0;sudo amdcccle
+: 1356972012:0;[[ -d /etc/alsa/ ]] || sudo mkdir -v /etc/alsa
+: 1356972126:0;sudo touch /etc/alsa/hdmi-switch
+: 1356972142:0;vim sudo:/etc/alsa/hdmi-switch
+: 1356972211:0;vim sudo:/etc/alsa/hdmi\-switch
+: 1356972295:0;ls
+: 1356972326:0;ls /etc/alsa
+: 1356972377:0;sudo chmod +x /etc/alsa/hdmi-switch
+: 1356972482:0;sudo touch /etc/alsa/asound.hdmi-connected
+: 1356972496:0;vim sudo:/etc/alsa/asound.hdmi-connected
+: 1356972788:0;/etc/alsa/hdmi-switch
+: 1356973200:0;ls /sys/class/sound
+: 1356973230:0;ls /sys/class/dmi
+: 1356973234:0;ls /sys/class/dma
+: 1356973243:0;vim sudo:/etc/alsa/hdmi\-switch
+: 1356973280:0;/etc/alsa/hdmi-switch
+: 1356973480:0;ls /etc/default/grub
+: 1356973489:0;vim sudo:/etc/default/grub
+: 1356973570:0;sudo grub-mkconfig -o /boot/grub/grub.cfg
+: 1356973595:0;sudo systemctl reboot
+: 1357143200:0;vim .conkyrc
+: 1357161611:0;conky -v
+: 1357161645:0;vim .conkyrc
+: 1357161690:0;conky
+: 1357161725:0;killall dzen
+: 1357161733:0;killall conky
+: 1357161742:0;pstree
+: 1357161803:0;killall dzen2
+: 1357161808:0;dzen2-personalized
+: 1357162249:0;which conky
+: 1357162761:0;yaourt conky | less
+: 1357163172:0;vim sudo:/usr/bin/dzen2-personalized
+: 1357164726:0;vim .xinitrc
+: 1357164769:0;sudo systemctl poweroff
+: 1357298508:0;cd scripts
+: 1357298520:0;..
+: 1357298549:0;dot_files/scripts
+: 1357298551:0;ls
+: 1357298559:0;vim autostart
+: 1357316653:0;./autostart
+: 1357316892:0;ping -c3 www.google.com
+: 1357316916:0;sudo systemctl reboot
+: 1357701900:0;ls
+: 1357701919:0;cd ubuntu/home/curtiss/.mplayer
+: 1357701920:0;ls
+: 1357701926:0;vim config
+: 1357832158:0;mutt
+: 1357838190:0;sudo systemctl poweroff
+: 1357829543:0;lsblk
+: 1357829571:0;cd dot_files
+: 1357829575:0;ls
+: 1357829585:0;git status
+: 1357829597:0;git add *
+: 1357829600:0;git status
+: 1357829638:0;ls
+: 1357829644:0;cd mplayer
+: 1357829645:0;ls
+: 1357829649:0;vim config
+: 1357847701:0;..
+: 1357847707:0;git add *

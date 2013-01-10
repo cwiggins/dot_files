@@ -2,6 +2,6 @@
 #
 # Autostart some apps
 
-tabbed -d >/tmp/tabbed.xid; vimprobable -e $(cat /tmp/tabbed.xid) &
+tabbed -d >/tmp/tabbed.xid; vimprobable2 -e $(cat /tmp/tabbed.xid) &
 urxvtc -title "mutt" -e mutt &
 

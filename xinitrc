@@ -45,7 +45,7 @@ dzen2-personalized &
 xcompmgr &
 
 # wallpaper
-nitrogen --restore &
+# nitrogen --restore &
 
 # autostart
 /home/curtiss/scripts/autostart &

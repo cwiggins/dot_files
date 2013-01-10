@@ -1,1 +1,2 @@
 if [ -d ~ ]; then pushd -q ~; fi
+if [ -d ~/ubuntu/home/curtiss/.mplayer ]; then pushd -q ~/ubuntu/home/curtiss/.mplayer; fi
