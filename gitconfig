@@ -67,3 +67,5 @@
 
 [github]
 	user = "cwiggins"
+[push]
+	default = simple
