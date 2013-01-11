@@ -1,0 +1,39 @@
+[general]
+ui = ttyui
+accounts = cxly15@gmail.com
+fsync = False
+
+[Account cxly15@gmail.com]
+localrepository = cxly15@gmail.com-local
+remoterepository = cxly15@gmail.com-remote
+status_backend = sqlite
+postsynchook = notmuch new
+
+[Repository cxly15@gmail.com-local]
+type = Maildir
+localfolders = ~/.mail/cxly15@gmail.com
+nametrans = lambda folder: {'Drafts': '[Gmail]/Drafts',
+							'Sent'  : '[Gmail]/Sent Mail',
+							'Flagged': '[Gmail]/Starred',
+							'Trash' : '[Gmail]/Trash',
+							'Archive': '[Gmail]/All Mail',
+							}.get(folder, folder)
+
+[Repository cxly15@gmail.com-remote]
+maxconnections = 1
+type = Gmail
+remoteuser = cxly15
+remotepass = "gmail password"
+realdelete = no
+nametrans = lambda folder: {'[Gmail]/Drafts': 'Drafts',
+							'[Gmail]/Sent Mail': 'Sent',
+							'[Gmail]/Starred': 'Flagged',
+							'[Gmail]/Trash': 'Trash',
+							'[Gmail]/All Mail': 'Archive',
+							}.get(folder, folder)
+folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
+											 '[Gmail]/Important',
+											 '[Gmail]/Spam',
+											 ]
+
+cert_fingerprint = 6d1b5b5ee0180ab493b71d3b94534b5ab937d042

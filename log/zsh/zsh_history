@@ -313,3 +313,43 @@
 : 1357829649:0;vim config
 : 1357847701:0;..
 : 1357847707:0;git add *
+: 1357847711:0;git status
+: 1357847719:0;git commit
+: 1357847749:0;git commit -m "added use-filename-title to mplayer config"
+: 1357847754:0;git push
+: 1357847792:0;lsblk
+: 1357847835:0;sudo systemctl reboot
+: 1357893071:0;ls
+: 1357893074:0;lsblk
+: 1357893096:0;lsblk /dev/sdb
+: 1357911307:0;lsblk /dev/sdb -f
+: 1357911326:0;vim sudo:/etc/fstab
+: 1357911425:0;mkdir SSD
+: 1357911436:0;sudo mount -a
+: 1357911439:0;ls SSD
+: 1357911717:0;lla
+: 1357911743:0;lsblk
+: 1357911781:0;lla .wallpaper
+: 1357911785:0;lla
+: 1357911822:0;lla | less
+: 1357911927:0;ls dot_files
+: 1357911940:0;ls dot_files/mutt
+: 1357911961:0;cd dot_files
+: 1357911999:0;cp ~/.offlineimaprc ~/dot_files/offlineimaprc
+: 1357912004:0;vim offlineimaprc
+: 1357912060:0;lla ~ | less
+: 1357912147:0;mkdir mcabber
+: 1357912183:0;cp ~/.mcabber/* ~/dot_files/mcabber/*
+: 1357912190:0;cp -R ~/.mcabber/* ~/dot_files/mcabber/*
+: 1357912197:0;cp -R ~/.mcabber/* ~/dot_files/mcabber/
+: 1357912201:0;ls mcabber
+: 1357912209:0;vim mcabber/mcabberrc
+: 1357912279:0;mv ~/.wallpapers /home/curtiss/SSD/curtiss/.wallpapers
+: 1357912293:0;mv ~/.wallpaper /home/curtiss/SSD/curtiss/.wallpaper
+: 1357912305:0;ls /home/curtiss/SSD/curtiss/.wallpaper
+: 1357912355:0;mv ~/violent_video_game_studies /home/curtiss/SSD/curtiss/violent_video_game_studies
+: 1357912396:0;mv ~/build /home/curtiss/SSD/curtiss/build
+: 1357912407:0;lla | less
+: 1357912433:0;lla ~| less
+: 1357912514:0;git status
+: 1357912523:0;git add *
