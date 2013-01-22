@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 
 # TMUX
@@ -106,6 +106,9 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
 # Don't put blank lines in history file
 setopt hist_reduce_blanks
+
+# PS1 settings
+#source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Colors for completion
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}

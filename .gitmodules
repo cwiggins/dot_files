@@ -115,3 +115,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = git://github.com/Lokaltog/powerline-fonts.git
+[submodule "powerline"]
+	path = powerline
+	url = git://github.com/Lokaltog/powerline.git
