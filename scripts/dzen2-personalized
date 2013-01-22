@@ -1,0 +1,14 @@
+#!/bin/sh
+
+RC="$HOME/.conkyrc"
+FG="white"
+BG="#000000"
+ALIGN="center"
+WIDTH="1366"
+HEIGHT="15"
+XPOS="0"
+FONT="UbuntuMono"
+YPOS="753"
+
+exec conky -d -c $RC | dzen2 -p -fg $FG -bg $BG -ta $ALIGN -w $WIDTH -h $HEIGHT -x $XPOS -y $YPOS -fn $FONT &
+exit 0

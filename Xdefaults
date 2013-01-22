@@ -27,13 +27,14 @@ URxvt.lineSpace:            0
 URxvt.iso14755:				true
 URxvt.iso14755_52:			true
 URxvt.meta8:				true
+URXvt.utf8:					true
 
 # Fonts
 URxvt.allow_bold: false
 URxvt.allow_italic: false
-URxvt*font: xft:Ubuntu Mono for Powerline:style=RegularForPowerline:pixelsize=14
-URxvt*boldFont: xft:Ubuntu Mono for Powerline:style=BoldForPowerline:pixelsize=14
-URxvt*italicFont: xft:Ubuntu Mono for Powerline:style=ItalicForPowerline:pixelsize=14
+URxvt*font: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=12
+URxvt*boldFont: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=12
+URxvt*italicFont: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=12
 URxvt*boldItalicFont: xft:Ubuntu Mono for Powerline:pixelsize=14
 
 # Fix font space

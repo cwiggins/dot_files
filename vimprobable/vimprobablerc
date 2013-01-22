@@ -8,3 +8,7 @@ set java=true
 set webinspector=true
 set images=true
 set shrinkimages=true
+set escapeinput=true
+
+set defaultfont="Menlo for Powerline, 12"
+set monofont="Ubuntu Mono for Powerline, 12"

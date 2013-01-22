@@ -39,7 +39,7 @@ xsetroot -cursor_name left_ptr &
 unclutter -noevents -idle 5 &
 
 # piping conky to dzen2
-dzen2-personalized &
+/home/curtiss/scripts/dzen2-personalized &
 
 # start compositing manager
 xcompmgr &
