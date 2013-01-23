@@ -1,3 +1,13 @@
+# Sourcing other settings ------------------------------------------------------
+source ~/.mutt/mutt-colors-solarized-dark-16.muttrc
+source ~/.mutt/muttrc.hooks
+
+# conditionally source
+
+source "`FILE=/home/curtiss/.mutt/muttrc.sidebar; \
+		 mutt -v | grep -Fq NOTMUCH || \
+		 FILE=/dev/null; echo $FILE`"
+
 # Paths ------------------------------------------------------------------------
 set folder           = ~/.mail               # mailbox location
 set alias_file       = ~/.mutt/alias         # where to store aliases
@@ -21,12 +31,6 @@ unset mark_old           # read/new is good enough for me
 set beep_new             # bell on new mails
 set pipe_decode          # strip headers and eval mimes when piping
 set thorough_search      # strip headers and eval mimes before searching
-
-# Sidebar Patch ----------------------------------------------------------------
-set sidebar_delim   = '  │'
-set sidebar_visible = yes
-set sidebar_width   = 30
-color sidebar_new color221 color233
 
 # Status Bar -------------------------------------------------------------------
 set status_chars  = " *%A"
@@ -80,11 +84,6 @@ macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to s
 # Saner copy/move dialogs
 macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
-
-# Sidebar Navigation -----------------------------------------------------------
-bind index,pager <down>   sidebar-next
-bind index,pager <up>     sidebar-prev
-bind index,pager <right>  sidebar-open
 
 # Pager View Options -----------------------------------------------------------
 set pager_index_lines = 10 # number of index lines to show

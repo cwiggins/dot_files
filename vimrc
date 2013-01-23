@@ -477,7 +477,6 @@ autocmd VimEnter * if exists("loaded_clam") | call ClamSettings() | endif
 " @name: vim-powerline
 " @author: Kim Silkebækken
 " @url: https://github.com/Lokaltog/vim-powerline
-python from powerline.bindings.vim import source_plugin; source_plugin()
 let g:Powerline_symbols = 'fancy'
 
 " @name: NERDTree

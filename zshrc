@@ -108,7 +108,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 setopt hist_reduce_blanks
 
 # PS1 settings
-#source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source /usr/share/zsh/site-contrib/powerline.zsh
 
 # Colors for completion
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}

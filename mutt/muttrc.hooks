@@ -1,0 +1,4 @@
+# Settings for the various mutt hooks ------------------------------------------
+set uncollapse_new=yes
+folder-hook . 'push <collapse-all>'    # collapse threads on folder entry
+
