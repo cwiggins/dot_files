@@ -17,6 +17,7 @@ nametrans = lambda folder: {'Drafts': '[Gmail]/Drafts',
 							'Flagged': '[Gmail]/Starred',
 							'Trash' : '[Gmail]/Trash',
 							'Archive': '[Gmail]/All Mail',
+							'powerline-fonts' : 'powerline/fonts',
 							}.get(folder, folder)
 
 [Repository cxly15@gmail.com-remote]
@@ -31,6 +32,7 @@ nametrans = lambda folder: {'[Gmail]/Drafts': 'Drafts',
 							'[Gmail]/Starred': 'Flagged',
 							'[Gmail]/Trash': 'Trash',
 							'[Gmail]/All Mail': 'Archive',
+							'powerline/fonts' : 'powerline-fonts'
 							}.get(folder, folder)
 folderfilter = lambda folder: folder not in ['[Gmail]/Trash',
 											 '[Gmail]/Important',

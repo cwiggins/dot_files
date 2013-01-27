@@ -717,3 +717,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Zsh
 autocmd BufRead,BufNewFile *.zsh* setlocal filetype=zsh
+
+augroup cpandoc
+	autocmd!
+	autocmd FileType pandoc setlocal filetype=pandoc.tex
+	autocmd FileType pandoc.tex nnoremap <buffer> <Leader>cl :setlocal filetype=tex.pandoc<CR>
+	autocmd FileType tex.pandoc nnoremap <buffer> <Leader>cl :setlocal filetype=pandoc.tex<CR>
+augroup END
