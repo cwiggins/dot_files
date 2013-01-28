@@ -1,0 +1,16 @@
+#!/usr/bin/python2.7
+import sys,os
+
+if sys.argv[1] == "MSG" and sys.argv[2] == "IN":
+    event_log=open(sys.argv[4])
+    pre_message=event_log.readlines(1)
+    message=""
+    for i in pre_message:
+        message=message + i.strip('\n')
+    event_cmd="notify-send --category=im \"" + sys.argv[3] +" says" "\n\" \"" + message +"\""
+    os.system(event_cmd)
+    os.system('rm ' + sys.argv[4])
+elif sys.argv[1] == "STATUS":
+    event_cmd="notify-send --category=im \"" + sys.argv[3] + " is " + "\" \"" + sys.argv[2] + "\""
+    os.system(event_cmd)
+sys.exit(0)

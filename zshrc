@@ -51,10 +51,10 @@ alias ctail='~/.scripts/ctail.sh'
 alias c='pygmentize -O monokai -f console256 -g'
 
 # apt shortcuts
-alias install='sudo apt-get install'
-alias remove='sudo apt-get remove'
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -R'
+alias update='sudo pacman -Syy'
+alias upgrade='sudo pacman -Syyu'
 
 # ls shortcuts
 alias la='ls -A'
