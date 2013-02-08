@@ -33,6 +33,10 @@ unset mark_old           # read/new is good enough for me
 set beep_new             # bell on new mails
 set pipe_decode          # strip headers and eval mimes when piping
 set thorough_search      # strip headers and eval mimes before searching
+set sendmail = "/usr/bin/msmtp -a default"
+set from = "cxly15@gmail.com"
+set sendmail_wait = 0
+unset record
 
 # Status Bar -------------------------------------------------------------------
 set status_chars  = " *%A"
@@ -55,10 +59,11 @@ mailboxes +cxly15@gmail.com/INBOX \
 		  +cxly15@gmail.com/Sent \
 		  +cxly15@gmail.com/Drafts \
 		  +cxly15@gmail.com/powerline \
-		  +cxly15@gmail.com/powerline-fonts
+		  +cxly15@gmail.com/powerline-fonts \
+		  +cxly15@gmail.com/archive
 
 # Other special Folders
-set mbox = "+cxly15@gmail.com/Archive"
+set mbox = "+cxly15@gmail.com/archive"
 set postponed = "+cxly15@gmail.com/Drafts"
 
 # Index View Options -----------------------------------------------------------
