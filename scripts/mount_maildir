@@ -1,0 +1,2 @@
+#!/bin/sh
+sshfs curtanime.hopto.org:/Anime/mail ~/.mail -C -p 2224
