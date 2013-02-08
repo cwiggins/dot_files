@@ -37,14 +37,13 @@ export AUTOSSH_PORT=0
 alias ssh='autossh'
 
 # Aliases
-alias sitdown='sudo shutdown -h now'
-alias shutup='sudo shutdown -r now'
-alias svn_remove='find . -name .svn -print0 | xargs -0 rm -rf'
+alias shutdown='sudo systemctl poweroff'
+alias reboot='sudo systemctl reboot'
 alias so='source'
-alias vimrc='cd ~/dot_win && vim vimrc'
-alias zshrc='cd ~/dot_win && vim zshrc'
+alias vimrc='cd ~/dot_files && vim vimrc'
+alias zshrc='cd ~/dot_files && vim zshrc'
 alias zreload='source ~/.zshrc'
-alias ctail='~/.scripts/ctail.sh'
+
 
 # Colorized cat command
 # https://twitter.com/paul_irish/status/257310654631919616
@@ -72,12 +71,6 @@ alias a2reload='sudo service apache2 reload'
 alias a2restart='sudo service apache2 restart'
 alias a2start='sudo service apache2 start'
 alias a2stop='sudo service apache2 stop'
-
-# Yii
-alias yii='~/Mindbox/yii/framework/yiic'
-
-# PEAR
-# alias pear='~/pear/bin/pear'
 
 # http://grml.org/zsh/zsh-lovers.html
 
@@ -108,7 +101,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 setopt hist_reduce_blanks
 
 # PS1 settings
-source /usr/share/zsh/site-contrib/powerline.zsh
+source /usr/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Colors for completion
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
