@@ -37,9 +37,8 @@ export AUTOSSH_PORT=0
 alias ssh='autossh'
 
 # Aliases
-alias sitdown='sudo shutdown -h now'
-alias shutup='sudo shutdown -r now'
-alias svn_remove='find . -name .svn -print0 | xargs -0 rm -rf'
+alias poweroff='sudo systemctl poweroff'
+alias reboot='sudo systemctl reboot'
 alias so='source'
 alias vimrc='cd ~/dot_win && vim vimrc'
 alias zshrc='cd ~/dot_win && vim zshrc'
@@ -63,19 +62,6 @@ alias lla='ls -lA'
 alias lr='ls -R'
 alias lar='ls -Ar'
 
-# Apache
-alias a2ensite='sudo a2ensite'
-alias a2dissite='sudo a2dissite'
-alias a2enmod='sudo a2enmod'
-alias a2dismod='sudo a2dismod'
-alias a2reload='sudo service apache2 reload'
-alias a2restart='sudo service apache2 restart'
-alias a2start='sudo service apache2 start'
-alias a2stop='sudo service apache2 stop'
-
-# Yii
-alias yii='~/Mindbox/yii/framework/yiic'
-
 # PEAR
 # alias pear='~/pear/bin/pear'
 
@@ -94,6 +80,7 @@ alias -g .....='../../../..'
 
 # My custom aliases
 alias chat='urxvtc -name mcabber -e mcabber &'
+
 # LESS Colors for Man
 # http://linuxtidbits.wordpress.com/2009/03/23/less-colors-for-man-pages/
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
