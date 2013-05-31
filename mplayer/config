@@ -1,9 +1,19 @@
 # Write your default config options here!
 [default]
-ao=pulse
+ao=sdl,pulse
 vo=vaapi
 va=vaapi
 use-filename-title=1
+dr=yes
+double=yes
+slices=yes
+
+autoq=100
+vf=hqdn3d
+lavdopts=threads=4
+autosync=30
+nobps=1
+
 
 
 [protocol.dvd]
@@ -21,3 +31,6 @@ nocache=yes
 [extension.mkv]
 ass=true
 embeddedfonts=true
+cache=150000
+cache-min=30
+aspect="16:9"
