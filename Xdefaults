@@ -33,8 +33,7 @@ URxvt*skipBuiltinGlyphs:    true
 # Fonts
 URxvt.allow_bold: false
 URxvt.allow_italic: false
-URxvt*font: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=10, \
-			xft:PowerlineSymbols:style=Medium:pixelsize=10
+URxvt*font: xft:Menlo\ for\ Powerline:pixelsize=10,xft:PowerlineSymbols:pixelsize=10
 URxvt*boldFont: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=10, \
 				xft:PowerlineSymbols:style=Medium:pixelsize=10
 URxvt*italicFont: xft:Menlo for Powerline:style=RegularForPowerline:pixelsize=10, \

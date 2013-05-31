@@ -13,7 +13,7 @@ if [ -d /etc/X11/xinit/xinitrc.d  ]; then
 fi
 
 # gnome keyring settings
-eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,,pkcs11,secrets,ssh)
+eval $('/usr/bin/gnome-keyring-daemon --start --components=gpg,,pkcs11,secrets,ssh')
 export SSH_AUTH_SOCK
 export GPG_AGENT_INFO
 export GNOME_KEYRING_CONTROL
@@ -48,7 +48,15 @@ xcompmgr &
 # nitrogen --restore &
 
 # autostart
-/home/curtiss/scripts/autostart &
+#/home/curtiss/scripts/autostart &
+
+#mount maildir
+#/home/curtiss/scripts/mount_maildir &
+
+#sync hwclock once with ntp
+hwclock -w
+
+# start nm-applet
+nm-applet &
 
 exec dwm
-

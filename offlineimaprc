@@ -11,7 +11,7 @@ postsynchook = notmuch new
 
 [Repository cxly15@gmail.com-local]
 type = Maildir
-localfolders = ~/.mail/cxly15@gmail.com
+localfolders = /media/stuff/mail/cxly15@gmail.com
 nametrans = lambda folder: {'Drafts': '[Gmail]/Drafts',
 							'Sent'  : '[Gmail]/Sent Mail',
 							'Flagged': '[Gmail]/Starred',

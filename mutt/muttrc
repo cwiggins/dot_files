@@ -55,7 +55,8 @@ mailboxes +cxly15@gmail.com/INBOX \
 		  +cxly15@gmail.com/Sent \
 		  +cxly15@gmail.com/Drafts \
 		  +cxly15@gmail.com/powerline \
-		  +cxly15@gmail.com/powerline-fonts
+		  +cxly15@gmail.com/powerline-fonts \
+		  +cxly15@gmail.com/Archive
 
 # Other special Folders
 set mbox = "+cxly15@gmail.com/Archive"

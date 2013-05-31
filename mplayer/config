@@ -1,9 +1,21 @@
 # Write your default config options here!
 [default]
-ao=pulse
-vo=vaapi
+ao=sdl,pulse,oss,
+vo=vaapi,
 va=vaapi
+nofontconfig=1
+framedrop=no
 use-filename-title=1
+dr=yes
+double=yes
+slices=yes
+
+autoq=100 #throw all spare cpu cycles at decoding
+vf=hqdn3d  #gets rid of the pixelation in some video, probably 10bit videos
+
+lavdopts=threads=4  #throws as many threads as possible at decoding
+autosync=30
+nobps=1
 
 
 [protocol.dvd]
@@ -21,3 +33,10 @@ nocache=yes
 [extension.mkv]
 ass=true
 embeddedfonts=true
+cache=131072
+cache-min=30
+alang=jpn,jp,
+slang=eng,en,
+sid=1
+aspect="16:9"
+

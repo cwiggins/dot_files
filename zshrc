@@ -1,13 +1,13 @@
 ZSH=$HOME/.oh-my-zsh
-#ZSH_THEME="agnoster"
+#ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
 # TMUX
 if which tmux 2>&1 >/dev/null; then
-	# if no session is started, start a new session
-	test -z ${TMUX} && tmux
+# if no session is started, start a new session
+	test -z ${TMUX} && (tmux attach || tmux new)
 #
-	# when quitting tmux, try to attach
+# when quitting tmux, try to attach
 	while test -z ${TMUX}; do
 		tmux attach || break
 	done
@@ -43,6 +43,7 @@ alias so='source'
 alias vimrc='cd ~/dot_files && vim vimrc'
 alias zshrc='cd ~/dot_files && vim zshrc'
 alias zreload='source ~/.zshrc'
+alias nettest='ping -c3 www.google.com'
 
 
 # Colorized cat command
@@ -61,16 +62,6 @@ alias ll='ls -l'
 alias lla='ls -lA'
 alias lr='ls -R'
 alias lar='ls -Ar'
-
-# Apache
-alias a2ensite='sudo a2ensite'
-alias a2dissite='sudo a2dissite'
-alias a2enmod='sudo a2enmod'
-alias a2dismod='sudo a2dismod'
-alias a2reload='sudo service apache2 reload'
-alias a2restart='sudo service apache2 restart'
-alias a2start='sudo service apache2 start'
-alias a2stop='sudo service apache2 stop'
 
 # http://grml.org/zsh/zsh-lovers.html
 
@@ -116,6 +107,19 @@ setWindowTitle() {
 unsetWindowTitle() {
 	export PROMPT_COMMAND=$DEFAULT_PROMPT_COMMAND
 }
+
+autoload -Uz history-beginning-search-menu
+zle -N history-beginning-search-menu
+bindkey '^X^X' history-beginning-search-menu
+
+# number of lines kept in history
+export HISTSIZE=1000
+# number of lines saved in the history after logout
+export SAVEHIST=1000
+# location of history
+export HISTFILE=~/.zhistory
+# append command to history file once executed
+setopt inc_append_history
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
