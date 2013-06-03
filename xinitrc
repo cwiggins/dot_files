@@ -48,7 +48,10 @@ xcompmgr &
 # nitrogen --restore &
 
 # autostart
-/home/curtiss/scripts/autostart &
+#/home/curtiss/scripts/autostart &
+
+# nm-applet
+/usr/bin/nm-applet &
 
 exec dwm
 
