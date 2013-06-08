@@ -1,4 +1,4 @@
-ZSH=$HOME/.oh-my-zsh
+ZSH=/usr/share/oh-my-zsh/
 #ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 
