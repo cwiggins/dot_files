@@ -1,8 +1,8 @@
 # Write your default config options here!
 [default]
 ao=sdl,pulse
-vo=x11,
-#va=vaapi
+vo=vaapi,
+va=vaapi,
 use-filename-title=1
 
 autoq=100
@@ -10,10 +10,6 @@ vf=hqdn3d
 lavdopts=threads=4
 autosync=30
 nobps=1
-
-[vo.vdpau]
-vc=ffh264,ffodivx,ffmpeg12,
-vf-clr=yes
 
 
 [protocol.dvd]
@@ -29,7 +25,7 @@ mouse-movements=yes
 nocache=yes
 
 [extension.mkv]
-#ass=true
+ass=true
 embeddedfonts=true
 cache=150000
 cache-min=30

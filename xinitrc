@@ -12,6 +12,10 @@ if [ -d /etc/X11/xinit/xinitrc.d  ]; then
   unset f
 fi
 
+if [ -s ~/.Xmodmap ]; then
+	xmodmap ~/.Xmodmap
+fi
+
 # gnome keyring settings
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,,pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
@@ -46,6 +50,7 @@ xcompmgr &
 
 # wallpaper
 # nitrogen --restore &
+~/.fehbg
 
 # autostart
 #/home/curtiss/scripts/autostart &
