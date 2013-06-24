@@ -1,6 +1,6 @@
 # Write your default config options here!
 [default]
-ao=pulse
+ao=sdl,oss,pulse
 vo=vaapi
 va=vaapi
 use-filename-title=1
@@ -21,3 +21,6 @@ nocache=yes
 [extension.mkv]
 ass=true
 embeddedfonts=true
+slang=en,eng
+alang=jp,jpn
+sid=1

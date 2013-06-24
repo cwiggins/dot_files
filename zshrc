@@ -1,4 +1,4 @@
-ZSH=$HOME/.oh-my-zsh
+ZSH=/usr/share/oh-my-zsh
 #ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 
@@ -13,7 +13,7 @@ if which tmux 2>&1 >/dev/null; then
 	done
 fi
 
-plugins=(bundler command-not-found compleat dircycle dirpersist extract gem git github history-substring-search rails3 rake rvm screen svn terminator zsh-syntax-highlighting)
+plugins=(bundler compleat dircycle dirpersist extract gem git github history-substring-search rails3 rake rvm screen svn  zsh-syntax-highlighting archlinux)
 
 source $ZSH/oh-my-zsh.sh
 
