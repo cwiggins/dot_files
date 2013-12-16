@@ -1,10 +1,11 @@
 # Write your default config options here!
 [default]
-ao=sdl,oss,pulse
-vo=vaapi
-va=vaapi
+ao=sdl,pulse
+vo=xv
+#va=vaapi
 use-filename-title=1
-
+vf=hqdn3d
+lavdopts=threads=4
 
 [protocol.dvd]
 dvd-device=/dev/sr0

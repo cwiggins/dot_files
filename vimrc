@@ -724,3 +724,6 @@ augroup cpandoc
 	autocmd FileType pandoc.tex nnoremap <buffer> <Leader>cl :setlocal filetype=tex.pandoc<CR>
 	autocmd FileType tex.pandoc nnoremap <buffer> <Leader>cl :setlocal filetype=pandoc.tex<CR>
 augroup END
+
+" syntax highlighting for rtorrent config file
+"au BufNewFile,BufRead *rtorrent.rc* setf rtorrent

@@ -1,11 +1,11 @@
 ZSH=/usr/share/oh-my-zsh
 #ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
-
+SDL_VIDEO_FULLSCREEN_HEAD=0
 # TMUX
 if which tmux 2>&1 >/dev/null; then
 	# if no session is started, start a new session
-	test -z ${TMUX} && tmux
+	test -z ${TMUX} && tmux new -s default
 #
 	# when quitting tmux, try to attach
 	while test -z ${TMUX}; do
@@ -35,6 +35,11 @@ export EDITOR=vim
 # Autossh settings
 export AUTOSSH_PORT=0
 alias ssh='autossh'
+
+#proxy settings
+#export http_proxy=http://192.168.1.151:8118
+#export https_proxy=$http_proxy
+#export no_proxy=kent.edu,localhost,127.0.0.1
 
 # Aliases
 alias poweroff='sudo systemctl poweroff'
@@ -111,7 +116,12 @@ unsetWindowTitle() {
 	export PROMPT_COMMAND=$DEFAULT_PROMPT_COMMAND
 }
 
+function chpwd(){
+	emulate -L zsh
+	ls
+}
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:/opt/android-sdk/tool:/opt/android-sdk/platform-tools # Add RVM to PATH for scripting

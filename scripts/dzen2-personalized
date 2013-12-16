@@ -4,11 +4,16 @@ RC="$HOME/.conkyrc"
 FG="white"
 BG="#000000"
 ALIGN="center"
-WIDTH="1366"
+WIDTH="1680"
 HEIGHT="15"
 XPOS="0"
-FONT="UbuntuMono"
-YPOS="753"
+#FONT="UbuntuMono"
+YPOS="1035"
+XS="2"
+EVENTS="button2=;"
 
-exec conky -d -c $RC | dzen2 -p -fg $FG -bg $BG -ta $ALIGN -w $WIDTH -h $HEIGHT -x $XPOS -y $YPOS -fn $FONT &
+exec conky -d -c $RC | dzen2 -p -fg $FG -bg $BG -ta $ALIGN -w $WIDTH -h $HEIGHT \
+	-x $XPOS -y $YPOS -xs $XS -e $EVENTS &
+exec conky -d -c ~/.conkyrc4 | dzen2 -p -fg $FG -bg $BG -ta $ALIGN -w 1920 \
+	-x 0 -y 1185 -h $HEIGHT -e $EVENTS -xs 1 &
 exit 0
